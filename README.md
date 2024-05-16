@@ -3,13 +3,13 @@ Trabalho individual de Desenvolvimento API e Restful.
 
 # Endpoints da API:
 
-# -  GET | Listar todos os livros
+<b>- GET | Listar todos os livros</b>
 -    localhost:8080/livros
-# - GET | Listar o livro por id: GET
+<b>- GET | Listar o livro por id: GET</b>
 -   localhost:8080/livros/{id}
-# - POST | Adicionar um livro:
+<b>- POST | Adicionar um livro:</b>
 -   localhost:8080/livros
-# - PUT | Atualizar um livro:
+<b>- PUT | Atualizar um livro:</b>
 -   localhost:8080/livros/{id}
-# -  DELETE | Deletar um livro:
+<b>-  DELETE | Deletar um livro:</b>
 -   localhost:8080/livros/{id}
