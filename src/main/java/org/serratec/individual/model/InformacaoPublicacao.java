@@ -2,17 +2,25 @@ package org.serratec.individual.model;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 @Embeddable
 public class InformacaoPublicacao {
 	
-	@NotNull
+	@NotBlank(message = "Preencha o campo de Autor corretamente.")
+	@Size(max = 30)
+	@Column(nullable = false, length = 30)
 	private String autor;
-	@NotNull
+	
+	@NotBlank(message = "Preencha a data de publicação corretamente, em formato 'YYYY-MM-DD'.")
 	private LocalDate dataPublicacao;
-	@NotNull
+	
+	@Size(max = 20)
+	@Column(nullable = false, length = 20)
+	@NotBlank(message = "Preencha campo da editora corretamente.")
 	private String editora;
 
 	public String getAutor() {
